@@ -21,11 +21,7 @@ class confession(commands.Cog):
 
             if (message.content.startswith('cfs: ') == True):
                 count = count + 1
-                mess_count = str(count)
-                server_channel_save = self.bot.get_channel(561142551453761538)
-                confession_message_saving = '#' + mess_count + "\n" + str(message.author) + ' ' + message.content
-                await server_channel_save.send(confession_message_saving)
-
+                mess_count = str(count
                 # get id of author and send dm if cfs has banned words
                 for i in range(0, len(BannedWords)):
                     if BannedWords[i] in lowermessage:
